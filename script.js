@@ -41,6 +41,7 @@ const isDead = (health) => {
     return health <= 0 ? true : false;
 }
 console.log(isDead(-5));
+console.log(isDead(23));
 
 function fight(player1, player2, player1Health, player2Health){
 

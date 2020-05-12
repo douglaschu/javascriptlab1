@@ -1,7 +1,7 @@
 const randomDamage = () => {
     return Math.floor(Math.random()* 10 + 1);
 }
-console.log(randomDamage());
+console.log(`Random Damage: ${randomDamage()}`);
 
 //to add an armor stat, replace above with:
 const randomDamageArmor = (armor) => {
@@ -13,7 +13,7 @@ const randomDamageArmor = (armor) => {
     } 
     return damage;
 }
-console.log(randomDamageArmor(2));
+console.log(`Damage with armor: ${randomDamageArmor(5)}`);
 
 
 const chooseOption = (opt1, opt2) => {
@@ -44,7 +44,7 @@ console.log(isDead(-5));
 
 function fight(player1, player2, player1Health, player2Health){
 
-    console.log(`${player1} vs. ${player2}! FIGHT!!`);
+    console.log(`Tonight's matchup is ${player1} vs. ${player2}! FIGHT!!`);
     
     while (true) {
         const attacker = chooseOption(player1, player2);
@@ -67,4 +67,4 @@ function fight(player1, player2, player1Health, player2Health){
     }
 }
 
-fight(`Sasha Banks`, `Io Shirai`, 100, 100);
+fight(`Sasha Banks`, `Bull Nakano`, 100, 100);
